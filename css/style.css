@@ -23,3 +23,136 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin: 0 0 10px;
 }
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Page 
+================ */
+
+.page {
+    width: 100%;
+    height: 100vh;
+
+    background: #000 url("../img/bg.jpg") center 
+    no-repeat;
+    background-size: cover;
+}
+
+/* Header 
+================ */
+
+.header {
+    background: #2B7DED;
+    padding: .5rem 0;
+    margin-bottom: 110px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header-logo img {
+    display: block;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav-link {
+    margin-right: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.header-nav-link:hover {
+    color:#70d3f8
+}
+
+.header-nav-link.active {
+    position: relative;
+}
+
+.header-nav-link.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+
+    background-color: #fff;
+    position: absolute;
+
+    left: 0;
+    bottom: -2px;
+}
+
+
+
+/* Content 
+================ */
+.content {
+    width: 565px;
+}
+
+.content-subtitle {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 300;
+    opacity: 60%;
+}
+.content-title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2;
+
+    margin-bottom: 35px;
+
+}
+
+.content-title span {
+    color: #2B7DED;
+}
+
+.text {
+    margin-bottom: 50px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+/* Btn 
+================ */
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+
+    background-color: #2B7DED;
+    border-radius: 5px;
+    padding: 11px 35px;
+    transition: background 0.2s linear;
+}
+
+.btn:hover { 
+background-color: #0c57c0;
+}
