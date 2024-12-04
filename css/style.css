@@ -37,6 +37,8 @@ p {
     width: 100%;
     height: 100vh;
 
+    position: relative;
+
     background: #000 url("../img/bg.jpg") center 
     no-repeat;
     background-size: cover;
@@ -155,4 +157,85 @@ p {
 
 .btn:hover { 
 background-color: #0c57c0;
+}
+
+
+/* Author 
+================ */
+
+.author-img {
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 15px rgba(76, 153, 245, 0.7);
+    background: #000 url("../img/bg.jpg") no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center center;
+    
+    
+}
+
+/* Footer 
+================ */
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+
+    width: 100%;
+}
+
+/* Contacts 
+================ */
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+
+.contacts-link {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+
+    margin-right: 2rem;
+}
+
+.contacts-link:last-child {
+    margin-right: 0;
+    position: relative;
+}
+.contacts-link:last-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 10px;
+
+    margin-left: 1rem;
+    width: 80px;
+    height: 2px;
+
+    pointer-events: none;
+    background-color: #fff;
+    
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contacts-icon {
+    margin-right: 5px;
 }
