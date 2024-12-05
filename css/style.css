@@ -112,6 +112,10 @@ p {
     width: 565px;
 }
 
+.content-header {
+    margin-bottom: 35px;
+}
+
 .content-subtitle {
     font-size: 1.4rem;
     color: #fff;
@@ -119,12 +123,12 @@ p {
     opacity: 60%;
 }
 .content-title {
+    margin-bottom: 5px;
     font-size: 1.8rem;
     color: #fff;
     font-weight: 500;
     line-height: 1.2;
 
-    margin-bottom: 35px;
 
 }
 
@@ -147,14 +151,22 @@ p {
     color: #fff;
     font-size: 1rem;
     font-weight: 300;
+    font-family: inherit;
     text-decoration: none;
 
+    cursor: pointer;
+
+    border: none;
     background-color: #2B7DED;
     border-radius: 5px;
     padding: 11px 35px;
     transition: background 0.2s linear;
 }
 
+.btn-full {
+    display: block;
+    width: 100%;
+}
 .btn:hover { 
 background-color: #0c57c0;
 }
@@ -165,11 +177,11 @@ background-color: #0c57c0;
 
 .author-img {
     position: absolute;
-    bottom: 120px;
-    right: 10px;
+    top: 30%;
+    right: 100px;
 
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 
     border-radius: 50%;
@@ -238,4 +250,41 @@ background-color: #0c57c0;
 
 .contacts-icon {
     margin-right: 5px;
+}
+
+
+/* Form 
+================ */
+
+.form {
+    width: 100%;
+    max-width: 270px;
+}
+
+.input,
+.textarea {
+    display: block;
+    width: 100%;
+
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgb(255, 2555, 255 , 0.1);
+    border: none;
+    border-radius: 5px;
+
+    padding: 12px 18px;
+    margin-bottom: 10px;
+}
+
+
+.textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #fff;
 }

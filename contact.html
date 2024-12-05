@@ -21,9 +21,9 @@
                         <img src="img/code.svg" alt="logo">
                     </div>
                     <nav class="header-nav">
-                        <a class="header-nav-link active" href="index.html">Home</a>
+                        <a class="header-nav-link" href="index.html">Home</a>
                         <a class="header-nav-link" href="about.html">About me</a>
-                        <a class="header-nav-link" href="contact.html">Contact</a>
+                        <a class="header-nav-link active" href="contact.html">Contact</a>
                     </nav>
                 </div>
             </div>
@@ -32,17 +32,19 @@
         <div class="container">
             <main class="content">
                 <div class="content-header">
-                    <h2 class="content-subtitle">My name is</h2>
                     <h1 class="content-title">
-                        Artem Davronov and I'm <span>Web Developer</span>
+                        Write me a <span>message</span>
                     </h1>
+                    <div class="text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
                 </div>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, reiciendis? Quisquam inventore aperiam reprehenderit dicta ipsa unde eum nulla praesentium, quidem exercitationem illo cupiditate, sit libero iure placeat ullam distinctio.
-                    </p>
-                </div>
-                <a class="btn" href="#">Contact me</a>
+                
+                <form class="form" action="/" method="post">
+                    <input class="input" type="text" name="name" placeholder="Name">
+                    <input class="input" type="email" name="email" placeholder="Email">
+                    <input class="input" type="tel" name="tel" placeholder="Phone">
+                    <textarea class="textarea" name="text" placeholder="Message"></textarea>
+                    <button class="btn btn-full" type="submit">Send message</button>
+                </form>
             </main>
         </div> 
         <footer class="footer">
